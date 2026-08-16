@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода в России</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id = 'header'>
+        <div id = 'sun'>
+            <img id = 'sun_img' src="" alt="sun">
+        </div>
+        <div id = 'weather_in'>
+            <p id = 'weather_city'>погода в городе </p>
+        </div>
+    </div>
+    <div id = 'article' >
+        <div id = 'your_town'>
+            <label for="your_city">Введите свой город</label>
+            <input id = 'your_city' type="text" placeholder="Набережные челны">
+            <button onclick = 'send_city()'>Отправить</button>
+        </div>
+        
+        <div id = 'see_weather'>
+            <p>Температура: <span id="temp">--</span>°C</p>
+            <p>Состояние: <span id="weatherType">--</span></p> 
+            <p>Влажность: <span id="humidity">--</span>%</p>
+            <p>Ветер: <span id="wind">--</span>м/с</p>
+        </div>
+    </div>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
